@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 22px;
+}
+
+container {
+  width: 100%;
+  margin: 100px;
+  /* height: 800px; */
+  max-width: 1200px;
+}
+
+header {
+  background: rgb(106, 34, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(106, 34, 195, 1) 0%,
+    rgba(45, 182, 253, 1) 100%
+  );
+  padding: 100px;
+  display: flex;
+  height: 335px;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.content {
+  color: white;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.image {
+  width: 400px;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+}
+
+.container2 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title2 {
+  font-weight: 700;
+}
+
+.content2 {
+  margin: 0px 0px 20px 0px;
+}
+
+.show {
+  width: 130px;
+}
+
+.container3 {
+  width: 100%;
+  background-color: royalblue;
+  padding: 60px 30px 50px 30px;
+}
+
+.container3 h4 {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  color: white;
+}
+
+.service-items {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-bg {
+  background-color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+i {
+  color: royalblue;
+}
+
+.icon-bg h5 {
+  color: white;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+.empty {
+  height: 200px;
+}
+
+.container4 {
+  display: flex;
+  position: relative;
+}
+
+.content4 img {
+  display: block;
+}
+
+.title4 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  padding: 50px;
+}
+
+.white-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border: 0px solid white;
+  transition: all 1s;
+}
+
+.white-box:hover {
+  border: 30px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 650px;
+  }
+  .content {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}

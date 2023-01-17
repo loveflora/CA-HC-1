@@ -1,0 +1,107 @@
+* {
+  font-family: "Noto Serif KR", serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: salmon;
+  height: 50px;
+  align-items: center;
+  padding: 5px;
+}
+
+.nav-item {
+  color: white;
+  margin: 10px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.background {
+  background-color: rgb(163, 192, 197);
+  width: 100%;
+  padding: 30px;
+}
+
+.title {
+  color: rgb(30, 81, 122);
+}
+
+table {
+  color: rgb(30, 81, 122);
+  background-color: white;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+  height: 300px;
+  margin: auto;
+}
+
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #c2d3de;
+  text-align: center;
+}
+
+table td:nth-child(1) {
+  width: 100px;
+}
+
+.btn {
+  background-color: rgb(14, 67, 102);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  float: right;
+  margin-right: 200px;
+}
+
+.btn:hover {
+  background-color: chocolate;
+}
+
+.btn:active {
+  background-color: #c2d3de;
+}
+
+.footer {
+  bottom: 200px;
+  width: 100%;
+  margin: 30px;
+  margin-left: 80px;
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+.custom-link:link {
+  color: rgb(0, 255, 0);
+}
+
+.custom-link:visited {
+  color: rgb(74, 146, 74);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #c2d3de;
+  margin: 5px;
+}
+
+.test {
+  width: 10rem;
+  height: 100px;
+  background-color: #c2d3de;
+}

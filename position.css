@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  background-image: url(./shoes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1px;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  margin: auto;
+  color: white;
+  top: 100px;
+  left: 300px;
+}
+
+.content {
+  position: absolute;
+  margin: auto;
+  left: 100px;
+  width: 80%;
+  color: white;
+  top: 150px;
+}
+
+.btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+  bottom: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.box {
+  background-color: antiquewhite;
+  width: 80%;
+  /* 반응형 웹페이지 */
+  max-width: 600px;
+  bottom: 0;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: -50px;
+  position: relative;
+  /* 앞으로 붕뜬다 */
+  top: -40px;
+}
+
+.send-btn {
+  background-color: rgb(252, 217, 21);
+  color: white;
+  border: none;
+  width: 80px;
+  height: 30px;
+  float: right;
+}
+
+input,
+textarea {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-bg {
+  background-color: rgb(216, 214, 214);
+  padding: 30px;
+}
+
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  height: 600px;
+  margin: auto;
+}
+
+.name {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.form-box {
+  padding: 10px;
+}
+
+.input-label {
+  width: 10px;
+}
+
+.product-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product-container div {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 50px;
+    color: blueviolet;
+  }
+  .product-container div {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-container div {
+    float: none;
+    width: 100%;
+  }
+}

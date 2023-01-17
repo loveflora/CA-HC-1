@@ -1,0 +1,37 @@
+.profile {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  font-size: 16;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+.content {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  text-align: center;
+}
+
+span {
+  color: blue;
+  font-weight: bold;
+}
+
+.box {
+  width: 100px;
+  background-color: rgb(250, 140, 235);
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+  box-shadow: 5px 5px black;
+}

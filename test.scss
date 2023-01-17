@@ -1,0 +1,187 @@
+// 변수
+$메인칼러: #2a4cb2;
+
+.background {
+  background-color: $메인칼러;
+  width: 100%;
+}
+
+.ani-navbar {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+  50% {
+    transform: translate(20px) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.ani-navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.copy {
+  width: 200px;
+  height: 200px;
+}
+
+.bg-red {
+  @extend .copy;
+  background-color: red;
+}
+
+.bg-green {
+  @extend .copy;
+  background-color: green;
+}
+
+.bg-blue {
+  @extend .copy;
+  background-color: blue;
+}
+
+.sh-list {
+  li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+  .active:hover {
+    background-color: skyblue;
+    color: white;
+  }
+}
+
+.alert-box-green {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: green;
+  color: white;
+}
+
+.alert-box-orange {
+  @extend .alert-box-green;
+  background: orange;
+}
+
+.alert-box-red {
+  @extend .alert-box-green;
+  background: red;
+}
+
+@mixin column($wid) {
+  width: $wid;
+  padding: 15px;
+  float: left;
+  background-color: #b9c2dd;
+}
+
+.row .col-6 {
+  @include column(40%);
+}
+
+.row .col-4 {
+  @include column(30%);
+}
+
+// .anti-text {
+//   // transform: skew(30deg);
+// }
+
+.anti-text:hover {
+  animation-name: 왔다갔다;
+  animation-duration: 1s;
+}
+
+@keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+.ani-btn {
+  padding: 15px 20px;
+  font-size: 20px;
+  background: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto;
+}
+
+.ani-btn:hover {
+  animation-name: shake;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.plus {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.plus:hover {
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    transform: scale(1.5);
+  }
+}

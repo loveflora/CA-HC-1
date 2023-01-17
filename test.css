@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.background {
+  background-color: #2a4cb2;
+  width: 100%;
+}
+
+.ani-navbar {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+  50% {
+    transform: translate(20px) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+  50% {
+    transform: translate(20px) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.ani-navbar:hover p {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.copy, .bg-blue, .bg-green, .bg-red {
+  width: 200px;
+  height: 200px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list .active:hover {
+  background-color: skyblue;
+  color: white;
+}
+
+.alert-box-green, .alert-box-red, .alert-box-orange {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: green;
+  color: white;
+}
+
+.alert-box-orange {
+  background: orange;
+}
+
+.alert-box-red {
+  background: red;
+}
+
+.row .col-6 {
+  width: 40%;
+  padding: 15px;
+  float: left;
+  background-color: #b9c2dd;
+}
+
+.row .col-4 {
+  width: 30%;
+  padding: 15px;
+  float: left;
+  background-color: #b9c2dd;
+}
+
+.anti-text:hover {
+  -webkit-animation-name: 왔다갔다;
+          animation-name: 왔다갔다;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+.ani-btn {
+  padding: 15px 20px;
+  font-size: 20px;
+  background: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto;
+}
+
+.ani-btn:hover {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.plus {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.plus:hover {
+  -webkit-animation-name: turn;
+          animation-name: turn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    transform: scale(1.5);
+  }
+}/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,102 @@
+.white-box {
+  margin: 50px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px 1px #eee;
+}
+
+.main1 {
+  display: flex;
+  /* padding: 50px; */
+}
+
+.main1 img {
+  width: 200px;
+}
+
+.content1 {
+  font-size: 20px;
+  padding: 50px;
+}
+
+.content2 {
+  margin-left: auto;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.job {
+  margin: 0;
+}
+
+.content1 i {
+  margin-right: 10px;
+  color: rgb(235, 147, 208);
+}
+
+.location {
+  color: rgb(235, 147, 208);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(235, 147, 208);
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+.line {
+  border: 1px solid rgb(218, 218, 218);
+  width: 0.1px;
+  height: 256px;
+  margin-left: auto;
+}
+
+table {
+  table-layout: fixed;
+  margin-left: 80px;
+  margin-right: 50px;
+}
+
+td {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.pseudo::after {
+  color: red;
+  content: "안녕";
+}
+
+progress {
+  /*기본 배경은 없애주는게 좋습니다*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  /* IE10 호환성용 */
+  color: red;
+}
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+}
+progress::-webkit-progress-value {
+  background-color: red;
+  border-radius: 10px;
+}
+
+/*파이어폭스 호환성을 위해*/
+progress::-moz-progress-bar {
+  background-color: red;
+  border-radius: 5px;
+}
